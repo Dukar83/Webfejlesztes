@@ -1,10 +1,26 @@
 body{
     color:white;
-    background-color: grey;
     background-image: url(../Images/hatter.png);
 }
 
-.a{
-    color:#C0C0C0;
+a {
+    color: #C0C0C0;
+}
+a:visited {
+    color: #C0C0C0;
+}
+a:active {
+    color: #C0C0C0;
+}
+a:hover {
+    color: #C0C0C0;
 }
 
+.tabla1{
+    align-self: left;
+    width: 1000px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    padding: 0px;
+    margin: 5px;  
+}
