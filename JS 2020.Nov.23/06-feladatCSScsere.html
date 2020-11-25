@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Add the style sheet. -->
+     <link id="theme" rel="stylesheet" 
+     type="text/css" href="light.css" /> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS csere</title>
+   <!--  Feladat: Gombokra css csere
+    a css más más szint állit be -->
+
+       <script>
+        function cssValto(value) {
+            var sheets = document.getElementsByTagName('link');
+            
+            sheets[0].href = value;
+        }
+    </script>
+</head>
+<body>
+    
+<button onclick="cssValto('elso.css')">Fekete</button>
+<button onclick="cssValto('masodik.css')">Kék</button>
+
+Szöveg 
+
+</body>
+</html>

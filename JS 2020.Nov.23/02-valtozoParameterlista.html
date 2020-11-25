@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Változó paraméterlista</title>
+</head>
+<body>
+    
+<script>
+    var showhero = function(name, ...adatok){
+        return name + ' szuper erősségei ' + adatok.join(', ');
+    }
+    alert(showhero('Superman', 'erős', 'mérges', 'lézerszem', 'repülés'))
+
+</script>
+
+</body>
+</html>
