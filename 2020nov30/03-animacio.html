@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animáció</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div{
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    
+<button>Animálj</button>
+<p>Ez egy bekezdés</p>
+<div></div>
+
+</body>
+<script>
+$(
+    () => $("button").click(
+        () => {
+            var div = $("div");
+            div.animate({height:'300px',opacity:'0.4'}, 'slow');
+            div.animate({width:'300px',opacity:'0.8'}, 'slow');
+            div.animate({height:'100px',opacity:'0.4'}, 'slow');
+            div.animate({width:'100px',opacity:'0.8'}, 'slow');
+        }
+    )
+)
+</script>
+
+</html>

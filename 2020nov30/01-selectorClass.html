@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class selector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+<h2 class="test">Ez egy h2 cimsor</h2>
+<p class="test">Ez egy bekezdés</p>
+<p>Ez is egy bekezdés</p>
+<button>Klikkelj rám!</button>
+</body>
+<!-- 
+<script>
+    $(
+        function(){
+            $("button").click(
+                function(){
+                    $(".test").toggle();
+                }
+            )
+        }
+    )
+</script>
+ -->
+helyett lehet
+
+<script>
+    $(()=>$("button").click(()=> $(".test").toggle())); ja csak nem müködik valami zárójel gond lehet
+</script>
+
+</html>

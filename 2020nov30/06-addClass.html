@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add class példa</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .fontos{
+            font-size: xx-large;
+            font-weight: bold;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1">Ez egy szöveg</div>
+<div id="div2">Ez egy másik szöveg</div>
+<button>Adj új osztályt az első elemhez!</button>
+
+</body>
+<script>
+    $(() => $('button').click(() => $('#div1').addClass("fontos")))
+</script>
+</html>

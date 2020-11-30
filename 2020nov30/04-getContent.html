@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Content példa</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+   
+<p id="test">Ez egy <bold>szöveg</bold> paragrafus blokkban</p>
+<button id="btn1">Mutasd meg a text-et</button>
+<button id="btn2">Mutasd meg a html-t</button>
+
+<p>
+    Neve: 
+    <Input type="text" id="test3" value="Mikegér"></Input>
+</p>
+<button id="btn3">Mutasd a value-t</button>
+
+</body>
+<script>
+    $(
+        () => {
+            $("#btn1").click( () => alert("Text: " + $("#test").text()));
+            $("#btn2").click( () => alert("Html: " + $("#test").html()));
+            $("#btn3").click( () => alert("Value: " + $("#test3").val()));
+        }     
+    )
+</script>
+</html>
